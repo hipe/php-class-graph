@@ -37,7 +37,7 @@
 * version 0.01 created on Fri, Aug 22, 2008
 */
 
-class ClassGrapher {
+class HipeClassGraph {
   
   private $files, $finds; 
   
@@ -328,7 +328,7 @@ class ClassGraphCli {
   public function __construct(){ }
    
   public function processInput( $args ) {
-    $this->graph = new ClassGrapher();
+    $this->graph = new HipeClassGraph();
     error_reporting( E_ALL | E_NOTICE );
     $this->execName = 'php '.$args[0];
     array_shift( $args );
